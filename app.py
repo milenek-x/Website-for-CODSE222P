@@ -10,17 +10,46 @@ def index():
 def notes():
 	return render_template("notes.html")
 
-@app.route('/videos')
-def videos():
-	return render_template("videos.html")
+@app.route('/notes-pf')
+def notespf():
+	return render_template("pf-notes.html")
 
-@app.route('/vid-ics')
-def ics():
-	return render_template("ics-videos.html")
+@app.route('/notes-ecs1')
+def notesecs1():
+	return render_template("ecs1-notes.html")
 
-@app.route('/vid-ecs1')
-def ecs1():
-	return render_template("ecs1-videos.html")
+@app.route('/notes-ics')
+def notesics():
+	return render_template("ics-notes.html")
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000, debug=True)
+@app.route('/multimedia')
+def multimedia():
+	return render_template("multimedia.html")
+
+@app.route('/mm-ics')
+def mmics():
+	return render_template("ics-multimedia.html")
+
+@app.route('/mm-pf')
+def mmpf():
+	return render_template("pf-multimedia.html")
+
+@app.route('/mm-pf-vc')
+def mmpfvc():
+	return render_template("pf-virtual-classrooms.html")
+
+@app.route('/mm-pf-other')
+def mmpfother():
+	return render_template("pf-other-multimedia.html")
+
+@app.route('/mm-ecs1')
+def mmecs1():
+	return render_template("ecs1-multimedia.html")
+
+@app.route('/mm-ecs1-vc')
+def mmecs1mmvc():
+	return render_template("ecs1-virtual-classrooms.html")
+
+@app.route('/mm-ecs1-other')
+def ecs1mmother():
+	return render_template("ecs1-other-multimedia.html")

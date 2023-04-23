@@ -1,55 +1,44 @@
-from flask import Flask, render_template
+from flask import Flask, redirect, request, url_for, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.errorhandler(404)
+def page_not_found(error):
+    return redirect(url_for('index'))
+
+# Define routes
+@app.route("/")
 def index():
-	return render_template("index.html")
+    # Render the home page template
+    return render_template("index.html")
 
-@app.route('/notes')
-def notes():
-	return render_template("notes.html")
+@app.route("/introduction-to-computer-science")
+def introduction_to_computer_science():
+    # Render the Introduction to Computer Science page template
+    return render_template("introduction_to_computer_science.html")
 
-@app.route('/notes-pf')
-def notespf():
-	return render_template("pf-notes.html")
+@app.route("/programming-fundamentals")
+def programming_fundamentals():
+    # Render the Programming Fundamentals page template
+    return render_template("programming_fundamentals.html")
 
-@app.route('/notes-ecs1')
-def notesecs1():
-	return render_template("ecs1-notes.html")
+@app.route("/mathematics-for-computing")
+def mathematics_for_computing():
+    # Render the Mathematics for Computing page template
+    return render_template("mathematics_for_computing.html")
 
-@app.route('/notes-ics')
-def notesics():
-	return render_template("ics-notes.html")
+@app.route("/effective-communication-skills-1")
+def effective_communication_skills_1():
+    # Render the Mathematics for Computing page template
+    return render_template("effective_communication_skills_1.html")
 
-@app.route('/multimedia')
-def multimedia():
-	return render_template("multimedia.html")
+@app.route("/database-management-systems")
+def database_management_systems():
+    # Render the Database Management Systems page template
+    return render_template("database_management_systems.html")
 
-@app.route('/mm-ics')
-def mmics():
-	return render_template("ics-multimedia.html")
+# Add more routes for additional modules...
 
-@app.route('/mm-pf')
-def mmpf():
-	return render_template("pf-multimedia.html")
-
-@app.route('/mm-pf-vc')
-def mmpfvc():
-	return render_template("pf-virtual-classrooms.html")
-
-@app.route('/mm-pf-other')
-def mmpfother():
-	return render_template("pf-other-multimedia.html")
-
-@app.route('/mm-ecs1')
-def mmecs1():
-	return render_template("ecs1-multimedia.html")
-
-@app.route('/mm-ecs1-vc')
-def mmecs1mmvc():
-	return render_template("ecs1-virtual-classrooms.html")
-
-@app.route('/mm-ecs1-other')
-def ecs1mmother():
-	return render_template("ecs1-other-multimedia.html")
+if __name__ == "__main__":
+    # Start the development server
+    app.run(debug=True)

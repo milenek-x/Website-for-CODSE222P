@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CODSE22.2P</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+        padding-top: 180px; /* Add some padding to push the content below the header and nav bar */
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #0077be;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        height: 80px;
+      }
+
+      header a{
+        background-color: #0077be;
+        color: #fff;
+        text-align: center;
+        text-decoration: none; 
+      }
+
+      header a:hover{
+        text-decoration: none;
+      }
+
+      nav {
+        position: fixed;
+        top: 120px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ddd;
+        height: 20px;
+        width: 100%;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+      }
+
+      nav li {
+        margin-right: 20px;
+        color: #0077be;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .left-links {
+        float: left;
+      }
+
+      .right-links {
+        float: right;
+        padding-right: 20px;
+      }
+
+      /* Module-specific styles */
+      section {
+        background-color: #0077be;
+        color: #fff;
+        margin-bottom: 40px;
+        border: 1px solid #0077be;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      section a {
+        text-decoration: none;
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      h2 a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      h2 a:hover{
+        text-decoration: underline;
+      }
+
+      h3 {
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      ul li a {
+        color: #0077be;
+        text-decoration: none;
+      }
+
+      ul li a:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        color: #fff;
+      }
+
+      footer {
+      background-color: #0077be;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <h1>CODSE22.2P</h1>
+      </a>
+    </header>
+    <nav>
+      <ul class="left-links">
+        <li><a href="/introduction-to-computer-science">ICS</a></li>
+        <li><a href="/programming-fundamentals">PF</a></li>
+        <li><a href="/mathematics-for-computing">MC</a></li>
+        <li><a href="/database-management-systems">DBMS</a></li>
+        <li><a href="/effective-communication-skills-1">ECS-1</a></li>
+      </ul>
+      <ul class="right-links">
+        <li><a href="https://nibm-my.sharepoint.com/:x:/g/personal/thisara_nibm_lk/EXT-auPDsU1Bpl28Xmy0QzUBta4F4b8KjpSPdx1L9qIpLw?e=4O6ezW" target="_blank">Schedule</a></li>
+        <li><a href="https://nibm-my.sharepoint.com/:b:/g/personal/codse222p-026_student_nibm_lk/EUWHl7RP2blNgrfulE-xiDQBfzbYrBWL1hiof33BoE4axQ?e=of2Jzb" target="_blank">WIFI Logins</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <a href="/introduction-to-computer-science">
+          <h2>Introduction to Computer Science</h2>
+          <h3>(CODSE22.2P/ICS)</h3>
+          <p>Lecturer: T. S. P.Weerasinghe</p>
+          <p>Lecturer: K. V. Narangoda</p>
+          <p>Lecturer: Bhashitha Prasanga</p>
+          <p>Lecturer: I. R. M. C. J. Rajapaksa</p>
+          <p>Lecturer: R. V. Sahabandu</p>
+        </a>
+      </section>
+      <section>
+        <a href="/programming-fundamentals">
+          <h2>Programming Fundamentals</h2>
+          <h3>(CODSE22.2P/PF)</h3>
+          <p>Lecturer: T. S. P.Weerasinghe</p>
+        </a>
+      </section>
+      <section>
+        <a href="/mathematics-for-computing">
+          <h2>Mathematics for Computing</h2>
+          <h3>(CODSE22.2P/MC)</h3>
+          <p>Lecturer: C. S. Muthugamage</p>
+        </a>
+      </section>
+      <section>
+        <a href="/database-management-systems">
+          <h2>Database Management Systems</h2>
+          <h3>(CODSE22.2P/DBMS)</h3>
+          <p>Lecturer: T. R. Thusitha</p>
+        </a>
+      </section>
+      <section>
+        <a href="/effective-communication-skills-1">
+          <h2>Effective Communication Skills-1</h2>
+          <h3>(CODSE22.2P/ECS-1)</h3>
+          <p>Lecturer: B. A. U. Hapuachchi</p>
+          <p>Lecturer: D. A. G. Ariyasinghe</p>
+        </a>
+      </section>
+      <!-- More module sections... -->
+    </main>
+    <footer>
+      <p>Open for suggestions. Please send them through <a href="https://wa.me/+94726407655" style="color: white;
+  text-decoration: underline;">WhatsApp.</a></p>
+    </footer>
+  </body>
+</html>
+

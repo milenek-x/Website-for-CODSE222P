@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Effective Communication Skills</title>
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 100vw;
+        padding-top: 180px /* Add some padding to push the content below the header and nav bar */
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #0077be;
+        color: #fff;
+        text-align: center;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 20px;
+        height: 80px;
+      }
+
+      header a{
+        background-color: #0077be;
+        color: #fff;
+        text-align: center;
+        text-decoration: none; 
+      }
+
+      header a:hover{
+        text-decoration: none;
+      }
+
+      nav {
+        position: fixed;
+        top: 120px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ddd;
+        height: 20px;
+        width: 100vw;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+      }
+
+      nav li {
+        margin-right: 20px;
+        color: #0077be;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      .left-links {
+        float: left;
+      }
+
+      .right-links {
+        float: right;
+        padding-right: 20px;
+      }
+
+      /* Module-specific styles */
+      section {
+        margin-bottom: 40px;
+      }
+
+      section a {
+        text-decoration: none;
+      }
+
+      h2 {
+        color: #0077be;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      h2 a {
+        color: #0077be;
+        text-decoration: none;
+      }
+
+      h2 a:hover{
+        text-decoration: underline;
+      }
+
+      h3 {
+        color: #0077be;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+        color: #0077be;
+      }
+
+      ul li a {
+        color: #0077be;
+        text-decoration: none;
+      }
+
+      ul li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <h1>CODSE22.2P</h1>
+      </a>
+    </header>
+    <nav>
+      <ul class="left-links">
+        <li style="padding-right: 20px;"><a href="/">HOME</a></li>
+        <li><a href="/introduction-to-computer-science">ICS</a></li>
+        <li><a href="/programming-fundamentals">PF</a></li>
+        <li><a href="/mathematics-for-computing">MC</a></li>
+        <li><a href="/database-management-systems">DBMS</a></li>
+      </ul>
+      <ul class="right-links">
+        <li><a href="https://nibm-my.sharepoint.com/:x:/g/personal/thisara_nibm_lk/EXT-auPDsU1Bpl28Xmy0QzUBta4F4b8KjpSPdx1L9qIpLw?e=4O6ezW" target="_blank">Schedule</a></li>
+        <li><a href="https://nibm-my.sharepoint.com/:b:/g/personal/codse222p-026_student_nibm_lk/EUWHl7RP2blNgrfulE-xiDQBfzbYrBWL1hiof33BoE4axQ?e=of2Jzb" target="_blank">WIFI Logins</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>Effective Communication Skills-1</h2>
+        <ul style="list-style-type: disc;">
+          <li>Tutorial Notes
+            <ol style="list-style-type: upper-roman; text-indent: 20px;">
+              <li><a href="https://nibm-my.sharepoint.com/:w:/g/personal/codse222p-026_student_nibm_lk/EZw-isqU_YFBp3QdA9Z6Q64By89s1LM4kVJbQBW4OVq7AQ?e=yVw8Qn" target="_blank">Phrases, Clauses, and Sentences</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:w:/g/personal/codse222p-026_student_nibm_lk/ES33vnXnnvNIuIeVBxIetL4BrN0HKjGre5sjh0Hb9NhZPw?e=1bcMKE" target="_blank">Phrases - Revision</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:w:/g/personal/codse222p-026_student_nibm_lk/Eaqp5CtRJplOhuqpX4w1bhoBAFluWzknvhdhOnBFXj8NSg?e=IK2q2C" target="_blank">Sentences</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:b:/g/personal/codse222p-026_student_nibm_lk/EQWCB8z2YjJFs46CTrf4MtABIM7xYvfZHk6Am1beiAUbsQ?e=biQaZw" target="_blank">Tenses</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:b:/g/personal/codse222p-026_student_nibm_lk/EbA35hPK6s1GhHBtESmtIUMBMSGYwesxtOG3CqJNUWzUrg?e=3r9Adz" target="_blank">Tenses - Detailed Handout</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:b:/g/personal/codse222p-026_student_nibm_lk/EfJZA7af0ypFh8EgDanzSZMBM0Iis5M1wDcs_Bjt7Hqh1A?e=ptB4lK" target="_blank">Tenses - Activity Sheet 1</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:b:/g/personal/codse222p-026_student_nibm_lk/ERdfg_pgjp5NtAy123XfijkBpGtSES70Q7kGSSFpJ6oy-A?e=maYMdU" target="_blank">Tenses - Activity Sheet 2</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:b:/g/personal/codse222p-026_student_nibm_lk/ERoHJQcB1hFNpYrp_A9SSyoBkM17JD0mW0NlB9sprEeeOw?e=bG3jf9" target="_blank">Tenses - Activity Sheet 3</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:w:/g/personal/codse222p-026_student_nibm_lk/EUPl5Tojw1JPs-zONac0mX4BTWsMcoN7AtLbCzcI8K2-fA?e=3knaMF" target="_blank">Activity Book</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:w:/g/personal/codse222p-026_student_nibm_lk/EZmLJe77gr9KqW030dlgzmQBmM0vSM5mHshIRAHOgowE9Q?e=Crkivj" target="_blank">Pre-evaluation</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:b:/g/personal/codse222p-026_student_nibm_lk/Ec6JrU9Rh6RDjA1Q0Y265A0BfPDjcR14oC0bc1ONiIFCDg?e=dhWAwS" target="_blank">Presentation Skills - I</a></li>
+              <li><a href="https://nibm-my.sharepoint.com/:p:/g/personal/codse222p-026_student_nibm_lk/EWwHsBHvp3VIvrJyifyask8Bk7-deufXeQUCjDT5i2Jw_Q?e=Ybgy0k" target="_blank">Presentation Skills - II</a></li>
+            </ol>
+          </li>
+          <li>Virtual Classrooms
+            <ol style="list-style-type: upper-roman; text-indent: 20px;">
+              <li>22<sup>nd</sup> January 2023 09:00 AM - 10:30 AM
+                <ol style="text-indent: 20px;">
+                  <li style="display: inline-block;"><a href="https://nibm-my.sharepoint.com/:v:/g/personal/codse222p-026_student_nibm_lk/EThlwUhyL3RIpaTAPVvcPDIBDT8JpgBG6CzjUkHIHOiWAA?e=trHoxS" target="_blank">OneDrive</a></li>
+                  <li style="display: inline-block;"><a href="https://bx1.lithium.lk/playback/presentation/2.3/66d63186376c50e8783127f2240ba7016e56e1f1-1674358282800" target="_blank">LMS</a></li>
+                </ol>
+              </li>
+              <li>29<sup>th</sup> January 2023 09:00 AM - 10:30 AM
+                <ol style="text-indent: 20px;">
+                  <li style="display: inline-block;"><a href="https://nibm-my.sharepoint.com/:v:/g/personal/codse222p-026_student_nibm_lk/EV6ad5WkfaBNsVDH0YNzPkIBjk6t8C3R-53jrgghO62JIg?e=FIRL32" target="_blank">OneDrive</a></li>
+                  <li style="display: inline-block;"><a href="https://bx1.lithium.lk/playback/presentation/2.3/66d63186376c50e8783127f2240ba7016e56e1f1-1674963205445" target="_blank">LMS</a></li>
+                </ol>
+              </li>
+              <li>12<sup>th</sup> February 2023 08:00 AM - 10:00 AM
+                <ol style="text-indent: 20px;">
+                  <li style="display: inline-block;"><a href="https://nibm-my.sharepoint.com/:v:/g/personal/codse222p-026_student_nibm_lk/EecJX3aDXz9OtLed26xsOiEBMFPYG1WQ0_qIKemyPD_nCA?e=itgI4A" target="_blank">OneDrive</a></li>
+                  <li style="display: inline-block;"><a href="https://bx1.lithium.lk/playback/presentation/2.3/66d63186376c50e8783127f2240ba7016e56e1f1-1676169012567" target="_blank">LMS</a></li>
+                </ol>
+              </li>
+              <li>19<sup>th</sup> February 2023 01:30 PM - 03:30 PM
+                <ol style="text-indent: 20px;">
+                  <li style="display: inline-block;"><a href="https://nibm-my.sharepoint.com/:v:/g/personal/codse222p-026_student_nibm_lk/Edoj3cDOrKFGlf5qDNR-YxgBq78lDBBbS2z7FkbUrM8ufw?e=sxJmZT" target="_blank">OneDrive</a></li>
+                  <li style="display: inline-block;"><a href="https://bx1.lithium.lk/playback/presentation/2.3/66d63186376c50e8783127f2240ba7016e56e1f1-1676793631698" target="_blank">LMS</a></li>
+                </ol>
+              </li>
+              <li>19<sup>th</sup> March 2023 01:30 PM - 03:30 PM
+                <ol style="text-indent: 20px;">
+                  <li style="display: inline-block;"><a href="https://nibm-my.sharepoint.com/:v:/g/personal/codse222p-026_student_nibm_lk/EaBFTEJ1EvpLgqCsMmbmeGABtvO0Va1H38YazqXE7EvnWw?e=7etPns" target="_blank">OneDrive</a></li>
+                  <li style="display: inline-block;"><a href="https://bx1.lithium.lk/playback/presentation/2.3/66d63186376c50e8783127f2240ba7016e56e1f1-1679212806193" target="_blank">LMS</a></li>
+                </ol>
+              </li>
+              <li>23<sup>th</sup> April 2023 08:00 AM - 10:00 AM
+                <ol style="text-indent: 20px;">
+                  <li style="display: inline-block;"><a href="https://nibm-my.sharepoint.com/:v:/g/personal/codse222p-026_student_nibm_lk/EW_bcAHwNgpMiBofeiW3Y3wBa8VFwIVpZu55E5cux5skcA?e=QM0x21" target="_blank">OneDrive</a></li>
+                  <li style="display: inline-block;"><a href="https://bx1.lithium.lk/playback/presentation/2.3/66d63186376c50e8783127f2240ba7016e56e1f1-1682217100867" target="_blank">LMS</a></li>
+                </ol>
+              </li>              
+            </ol>
+          </li>
+        </ul>
+      </section>
+      <!-- More module sections... -->
+    </main>
+  </body>
+</html>

@@ -37,6 +37,10 @@ def database_management_systems():
     # Render the Database Management Systems page template
     return render_template("database_management_systems.html")
 
+@app.route("/object-oriented-programming")
+def object_oriented_programming():
+    # Render the Object Oriented Programming page template
+    return render_template("object_oriented_programming.html")
 # Add more routes for additional modules...
 
 if __name__ == "__main__":

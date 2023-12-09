@@ -42,6 +42,16 @@ def electronics_and_computer_architecture():
     # Render the Electronics and Computer Architecture page template
     return render_template("electronics_and_computer_architecture.html")
 
+@app.route("/gui-application-development")
+def gui_application_development():
+    # Render the GUI Application Development page template
+    return render_template("gui_application_development.html")
+
+@app.route("/software-engineering")
+def software_engineering():
+    # Render the GUI Application Development page template
+    return render_template("software_engineering.html")
+
 @app.route("/effective-communication-skills-1")
 def effective_communication_skills_1():
     # Render the Effective Communication Skills-1 page template
